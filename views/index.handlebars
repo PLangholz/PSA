@@ -1,9 +1,124 @@
-  <div>Welcome to {{title}}, enable camera to post video emoji!</div>
-  <div id="waiting">Connecting to chat server...</div>
-  <div id="second_counter"></div>
-  <div id="conversation"></div>
-  <div id="submission">
-    <input type="text" placeholder="say something..">
-  </div>
-  <div id="webcam_stream"></div>
-  <div id="video_container"></div>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PSA</title>
+	<link rel="stylesheet" href='/stylesheets/main.css'>
+    <link rel="stylesheet" href='stylesheets/test.css'>
+
+    <script src='javascript/jquery-1.11.0.min.js'></script>
+    
+</head>
+<body>
+
+<div class="header_wrap">
+	<div class="header">
+		<h1>PSA</h1>
+	</div>
+</div>
+<div class="nav">
+	<div class="clickable about_us selected" id="people_nav">Our Team</div>
+	<div class="clickable interests" id="interests_nav">Our Interests</div>
+	<div class="clickable projects" id="projects_nav">Our Projects</div>
+</div>
+<div class="people" id="people">
+	<div class="person" id="preston">
+		<div><span class="label">Name:</span> Preston Langholz</div>
+		<div><span class="label">Interests:</span> Communication: "How do I quickly chat with my mom without committing to a full conversation? What do my smelly sandals say about me?"</div>
+		<div><span class="label">Recent Research:</span> Recently discovered, through thorough user studies and rapid prototyping, that mustache or no mustache, girls just aren't attracted to him.</div>
+	</div>
+
+	<div class="person" id="adrian">
+		<div><span class="label">Name:</span> Adrian Sierra</div>
+		<div><span class="label">Interests:</span> Communication: "How do i get the hell out of this lame party? I want to leave with someone but I don't know who else wants to leave. Also, how do I lie effectively? I can't keep track of all my lies and I don't want them to conflict with each other."</div>
+		<div><span class="label">Recent Accomplishments:</span> Recently won the first ever Noble Prize in Design for creating and conducting the first ever B/A test. It had never been done.</div>
+	</div>
+
+	<div class="person" id="moritz">
+		<div><span class="label">Name:</span> Moritz Sudhof</div>
+		<div><span class="label">Interests:</span> Communication: "Are my colorful pants and awesome vest jacket giving off the right impression? I may have a sweet sense of style, but i still care about connecting families and empty-nest parents."</div>
+		<div><span class="label">Recent Controversy: </span> Moritz was recently arrested for ideating in public. After leaving a German football game, he was stopped for holding up traffic because he was "brainstorming a new idea for a sidewalk that could handle all the fan foot traffic." </div>
+	</div>
+</div>
+
+
+<div class="interest" id="interest">
+	<div class="left_column">
+		<div class="entry">
+			<h3>Connecting Remote Families</h3>
+			<h5>Topics Include</h5>
+			<ul>
+				<li>Virtual Message Board: leave messages for your loved ones as if you stopped by and left a note</li>
+				<li>Family Band: the family gets together via web and composes a song together to a provided background beat</li>
+				<li>Interactive Family Portait: Each face is bright or not depending on what they're doing or where they are</li>
+				<li>Remote Controlled Statue: Something the kids cannot remotely active and move around so the mom comes home and can see that "her kids had been there."</li>
+			</ul>
+		</div>
+		<div class="entry">
+			<h3>Communicating Politely</h3>
+			<h5>Topics Include</h5>
+			<ul>
+				<li>How do I respectfully decline an offer?</li>
+				<li>How do I politely exit a conversation?</li>
+				<li>How do I deliver bad news?</li>
+			</ul>
+		</div>
+		<div class="entry">
+			<h3>Limited Availability</h3>
+			<h5>Topics Include</h5>
+			<ul>
+				<li>I can talk, but I only have 2 minutes. Make it quick. </li>
+				<li>"Can't you see I'm busy? Do not approach me." </li>
+			</ul>
+		</div>
+		<div class="entry">
+			<h3>Sublte Communication</h3>
+			<h5>Topics Include</h5>
+			<ul>
+				<li>Without talking out loud, users can communicate their desires and see who shares them. "Who else wants to leave this party?.."</li>
+				<li>How do I read between the lines into what this person is saying. "Do they <em>actually</em> want me to come to dinner with them? Or are they just being polite?"<li>
+			</ul>
+		</div>
+		<div class="entry">
+			<h3>Deception</h3>
+			<h5>Topics Include</h5>
+			<ul>
+				<li>Something to help a user keep track of lies so that they don't get caught in conflicting stories.</li>
+				<li>Something to help generate an excuse as to why you can't make it to a boring lecture your friend is giving</li>
+			</ul>
+		</div>
+	</div>
+	<div class="right_column">
+		<img src="images/brainstorming.JPG" height="500" width="250"/>
+		<img src="images/brainstorming2.JPG" height="500" width="250"/>
+		<img src="images/white_board.JPG" height="500" width="250"/>
+	</div>
+</div>
+
+<div class="projects" id="projects">
+	<div class="entry">
+		<h3>Keep Your Lies in Line</h3>
+		<p>An application where users can document the lies they tell so that when producing a new lie, they can reference previous lies to make sure their stories do not conflict</p>
+		<h5>More Coming Soon</h5>
+	</div>
+	<div class="entry">
+		<h3>10 Seconds or Less</h3>
+		<p>An application that senses when users are at their computer. Although they may be preoccupied and not in the mood for a full conversation, other users can see that they are at their computer and they can begin a video chat that closes after 10 seconds. A video chat between two users cannot be opened more than once a day.</p>
+		<h5>More Coming Soon</h5>
+	</div>
+	<div class="entry">
+		<h3>Let's Get Out of Here</h3>
+		<p>We all want to leave the boring party, but i don't want to say it out loud, that would be rude. Instead, under the veil of anonymity, I make known that I want to leave the party, and can coordinate with others who want to leave the party. Can be generalized to any <em>taboo</em> activity.</p>
+		<h5>More Coming Soon</h5>
+	</div>
+	<div class="entry">
+		<h3>Virtual Cork</h3>
+		<p>A projection on a wall or the refrigerator in your parents home where you can virtually leave messages and notes for them to see when they come home or walk by. </p>
+		<h5>More Coming Soon</h5>
+	</div>
+</div>
+
+
+
+</body>
+</html>

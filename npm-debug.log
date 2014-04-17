@@ -1,0 +1,121 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'nodewebkit' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'nodewebkit', null ]
+6 verbose cache add name=undefined spec="nodewebkit" args=["nodewebkit",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'nodewebkit',
+7 verbose parsed url   path: 'nodewebkit',
+7 verbose parsed url   href: 'nodewebkit' }
+8 silly lockFile 67e75da8-nodewebkit nodewebkit
+9 verbose lock nodewebkit /home/vagrant/.npm/67e75da8-nodewebkit.lock
+10 silly lockFile 67e75da8-nodewebkit nodewebkit
+11 silly lockFile 67e75da8-nodewebkit nodewebkit
+12 verbose addNamed [ 'nodewebkit', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e9b2c223-nodewebkit nodewebkit@
+15 verbose lock nodewebkit@ /home/vagrant/.npm/e9b2c223-nodewebkit.lock
+16 silly addNameRange { name: 'nodewebkit', range: '*', hasData: false }
+17 verbose url raw nodewebkit
+18 verbose url resolving [ 'http://registry.npmjs.org/', './nodewebkit' ]
+19 verbose url resolved http://registry.npmjs.org/nodewebkit
+20 info trying registry request attempt 1 at 04:33:46
+21 http GET http://registry.npmjs.org/nodewebkit
+22 http 200 http://registry.npmjs.org/nodewebkit
+23 silly registry.get cb [ 200,
+23 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+23 silly registry.get     etag: '"62GABMZCK3KBDMG4KO3K7UGW2"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '21956',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Thu, 10 Apr 2014 04:33:46 GMT',
+23 silly registry.get     age: '13',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-sv95-SJC3',
+23 silly registry.get     'x-cache': 'MISS, MISS',
+23 silly registry.get     'x-cache-hits': '0, 0',
+23 silly registry.get     'x-timer': 'S1397104426.522104740,VS0,VS111,VE203,VE318',
+23 silly registry.get     vary: 'Accept' } ]
+24 silly addNameRange number 2 { name: 'nodewebkit', range: '*', hasData: true }
+25 silly addNameRange versions [ 'nodewebkit',
+25 silly addNameRange   [ '0.7.3',
+25 silly addNameRange     '0.7.4',
+25 silly addNameRange     '0.7.5',
+25 silly addNameRange     '0.7.5-1',
+25 silly addNameRange     '0.7.5-2',
+25 silly addNameRange     '0.7.5-3',
+25 silly addNameRange     '0.8.0',
+25 silly addNameRange     '0.8.1',
+25 silly addNameRange     '0.8.2',
+25 silly addNameRange     '0.8.2-1',
+25 silly addNameRange     '0.8.4',
+25 silly addNameRange     '0.8.4-1',
+25 silly addNameRange     '0.8.4-2',
+25 silly addNameRange     '0.9.2',
+25 silly addNameRange     '0.9.2-1',
+25 silly addNameRange     '0.8.5',
+25 silly addNameRange     '0.9.2-2',
+25 silly addNameRange     '0.8.5-1',
+25 silly addNameRange     '0.8.5-2',
+25 silly addNameRange     '0.8.5-3' ] ]
+26 verbose addNamed [ 'nodewebkit', '0.8.5-3' ]
+27 verbose addNamed [ '0.8.5-3', '0.8.5-3' ]
+28 silly lockFile 8688f7aa-nodewebkit-0-8-5-3 nodewebkit@0.8.5-3
+29 verbose lock nodewebkit@0.8.5-3 /home/vagrant/.npm/8688f7aa-nodewebkit-0-8-5-3.lock
+30 silly lockFile 83aee0d9-odewebkit-nodewebkit-0-8-5-3-tgz http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+31 verbose lock http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz /home/vagrant/.npm/83aee0d9-odewebkit-nodewebkit-0-8-5-3-tgz.lock
+32 verbose addRemoteTarball [ 'http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz',
+32 verbose addRemoteTarball   '386df708697b10484c47c18406e02baf31c0b245' ]
+33 info retry fetch attempt 1 at 04:33:46
+34 verbose fetch to= /home/vagrant/tmp/npm-1719-AugVcnGH/1397104426856-0.5924465325661004/tmp.tgz
+35 http GET http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+36 http 503 http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+37 error fetch failed http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+38 info retry will retry, error on last attempt: Error: 503 Service Unavailable
+39 info retry fetch attempt 2 at 04:33:56
+40 verbose fetch to= /home/vagrant/tmp/npm-1719-AugVcnGH/1397104426856-0.5924465325661004/tmp.tgz
+41 http GET http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+42 http 503 http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+43 error fetch failed http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+44 info retry will retry, error on last attempt: Error: 503 Service Unavailable
+45 info retry fetch attempt 3 at 04:34:56
+46 verbose fetch to= /home/vagrant/tmp/npm-1719-AugVcnGH/1397104426856-0.5924465325661004/tmp.tgz
+47 http GET http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+48 http 503 http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+49 error fetch failed http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+50 silly lockFile 83aee0d9-odewebkit-nodewebkit-0-8-5-3-tgz http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+51 silly lockFile 83aee0d9-odewebkit-nodewebkit-0-8-5-3-tgz http://registry.npmjs.org/nodewebkit/-/nodewebkit-0.8.5-3.tgz
+52 silly lockFile 8688f7aa-nodewebkit-0-8-5-3 nodewebkit@0.8.5-3
+53 silly lockFile 8688f7aa-nodewebkit-0-8-5-3 nodewebkit@0.8.5-3
+54 silly lockFile e9b2c223-nodewebkit nodewebkit@
+55 silly lockFile e9b2c223-nodewebkit nodewebkit@
+56 error Error: 503 Service Unavailable
+56 error     at WriteStream.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/fetch.js:57:12)
+56 error     at WriteStream.EventEmitter.emit (events.js:117:20)
+56 error     at fs.js:1596:14
+56 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:103:5
+56 error     at Object.oncomplete (fs.js:107:15)
+57 error If you need help, you may report this *entire* log,
+57 error including the npm and node versions, at:
+57 error     <http://github.com/isaacs/npm/issues>
+58 error System Linux 3.2.0-23-generic-pae
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "nodewebkit"
+60 error cwd /home/vagrant/cs247-2104-p3
+61 error node -v v0.10.24
+62 error npm -v 1.3.21
+63 verbose exit [ 1, true ]

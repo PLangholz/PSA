@@ -1,354 +1,47 @@
-@-webkit-keyframes lol {
-    /*0%  { -webkit-transform: translate3d(0px, 0px, 0); }
-    50% { -webkit-transform: translate3d(100px, 100px, 0); }
-    100%  { -webkit-transform: translate3d(0px, 0px, 0); }*/
-    /*0% {
-    	top: 25%;
-    	left: 10%;
-    }
-    10% {
-    	top: 10%;
-    	left: 20%;
-    }
-    30% {
-    	top: 15%;
-    	left: 30%;
-    }
-    40% {
-    	top: 50%;
-    	left: 40%;
-    }
-    50% {
-    	top: 45%;
-    	left: 50%;
-    }
-    60% {
-		top: 40%;
-		left: 55%;
-    }
-    70% {
-    	top: 45%;
-    	left: 60%;
-    }
-    80% {
-    	top: 50%;
-    	left: 65%;
-    } 
-    90% {
-    	top: 45%;
-    	left: 70%;
-    }
-    100% {
-    	top: 50%;
-    	left: 75%;
-    }*/
-    0% {
-		top: 30%;
-		left: 20%;
-	}
-	15% {
-		top: 40%;
-		left: 30%;
-	}
-	30% {
-		top: 30%;
-		left: 40%;
-	}
-	45% {
-		top: 20%;
-		left: 30%;
-
-	}
-	60% {
-		top: 30%;
-		left: 20%;
-	}
-	75% {
-		top: 40%;
-		left: 30%;
-	}
-	90% {
-		top: 30%;
-		left: 40%;
-	}
-	
+.nav div {
+	display: inline-block;
 }
 
-
-@-webkit-keyframes happy {
-
-	0% {
-		top: 60%;
-		left: 20%;
-	}
-	20% {
-		top: 50%;
-		left: 30%;
-	}
-	40% {
-		top: 20%;
-		left: 40%;
-	}
-	60% {
-		top: 50%;
-		left: 50%;
-
-	}
-
-	80% {
-		top: 60%;
-		left: 60%;
-	}
-	90% {
-		top: 50%;
-		left: 70%;
-	}
-	100% {
-		top: 20%;
-		left: 80%;
-	}
-
-}
-#happy_animation {
-	position: absolute;
-	-webkit-animation-name: happy;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes embarassed {
-	0% {
-		top: 70%;
-		left: -10%;
-	}
-	20% {
-		top: 60%;
-		left: 10%;
-	}
-	30% {
-		top: 70%;
-		left: -10%
-	}
-
-	
-	60% {
-		top: 70%;
-		left: 70%;
-	}
-	70% {
-		top: 60%;
-		left: 65%;
-	}
-	75% {
-		top: 70%;
-		left: 70%;
-	}
-	100% {
-		top: 40%;
-		left: 40%;
-	}
-}
-
-#embarassed_animation {
-	position: absolute;
-	-webkit-animation-name: embarassed;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: linear;
-}
-
-
-@-webkit-keyframes sad {
-	0% {
-		top: 5%;
-		left: 40%;
-	}
-	10% {
-		-webkit-transform: rotate(-80deg);
-	}
-	17% {
-		-webkit-transform: rotate(-45deg);
-
-	}
-	25% {
-		top: 15%;
-		left: 40%;
-		-webkit-transform: rotate(-30deg);
-	}
-	35% {
-		top: 20%;
-		left: 45%;
-		-webkit-transform: rotate(-45deg);
-	}
-	45% {
-		top: 30%;
-		left: 45%;
-		-webkit-transform: rotate(-60deg);
-	}
-	55% {
-		top: 35%;
-		left: 40%;
-	}
-	75% {
-		top: 40%;
-		left: 40%;
-		-webkit-transform: rotate(-30deg);
-
-	}
-	90% {
-		top: 65%;
-		left: 43%;
-	}
-	100% {
-		top: 70%;
-		left: 43%;
-	}
-
-}
-
-#sad_animation {
-	position: absolute;
-	background-color: rgba(100,100,100,.3);
-	/*-webkit-border-top-right-radius: 70px; 
-	-webkit-border-bottom-left-radius: 70px; */
-	overflow: hidden;
-	border-bottom-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-top-left-radius: 50%;
-	-webkit-transform:rotate(-45deg);
-	-webkit-animation-name: sad;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: linear;
-	width: 240px;
-	height: 240px;
-	z-index: 5;
-}
-
-#sad_animation video {
-	-webkit-transform: rotate(45deg);
-}
-
-#lol_animation video, #angry_animation video, #happy_animation video,
-#sad_animation video, #embarassed_animation video {
-	height: 240px;
-	width: 320px;
-}
-#lol_animation {
-	/*width: 25%;
-	height: 25%;*/
-	position: absolute;
-
-	/*left: 10%%;
-	top: 25%;*/
-    /*-webkit-animation: movement 5s linear infinite;*/
-    -webkit-animation-name: lol;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes angry {
-	0% {
-		height: 240px;
-		width: 320px;
-		top: 25%;
-		left: 25%;
-		
-	}
-	50% {
-		height: 360px;
-		width: 480px;
-		top: 25%;
-		left: 25%;
-		
-	}
-}
-#angry_animation {
-	position: absolute;
-	top: 25%;
-	left: 25%;
-}
-#angry_animation video {
-	position: absolute;
-	
-	-webkit-animation-name: angry;
-	-webkit-animation-duration: 0.5s;
-	-webkit-animation-iteration-count: 6;
-	-webkit-animation-timing-function: linear;
-
-}
-.video_wrapper {
-	position: relative;
-}
-.video_wrapper .video_overlay {
-	position: absolute;
-	z-index: 2000;
-	top: 0px;
-	left: 0px;
-	width: 120px;
-	height: 90px;
-	color: white;
-	background-color: rgba(100,100,100,.5);
-	
-}
-
-
-.my_msg .msg_wrapper{
-	float: right;
-}
-
-.my_msg .msg_wrapper .video_wrapper video {
-	float: right;
-}
-
-.my_msg .msg_wrapper .video_wrapper .video_overlay {
-	left: auto;
-	right: 0px;
-}
-
-
-body #webcam_stream {
-	right: 30%;
-}
-#vid_timer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 240px;
-	width: 322px;
-	color:white;
-	text-align: center;
-}
-#vid_timer p {
-	margin-top: 60%;
-	background-color: rgba(175,175,175,.7);
-}
-#vid_counter {
+.clickable {
+	padding: 10px;
 	font-size: 20pt;
-	font-weight: bold;
-}
-.video_wrapper p {
-	vertical-align: middle;
-	margin: 25% 0;
+	background-color: rgb(249,194,83);
+	border-radius: 10px;
+	margin: auto;
 	text-align: center;
+	width: 30%;
+}
+
+.header {
+	width:50%;
+	margin: auto;
+	text-align: center;
+}
+
+.nav .selected {
+	background-color: rgba(249,194,83,.5);
+}
+
+.people .person  {
+	margin: 20px 0;
 
 }
 
-#angry_animation .video_overlay ,#happy_animation .video_overlay,
- #lol_animation .video_overlay, #sad_animation .video_overlay,
- #embarassed_animation .video_overlay {
-	display:none;
+.label {
+	font-weight: bold;
+	font-size: 13pt;
+	text-decoration: underline;
 }
 
-.msg p {
-	margin: 0;
+.interest .left_column, .interest .right_column {
+	display: inline-block;
+	width: 50%
 }
-.msg_wrapper_wrapper {
+
+.interest .left_column {
+	float: left;
+}
+
+.interest {
 	overflow: auto;
 }
-.msg_wrapper {
-	/*overflow: auto;*/
-}
-
