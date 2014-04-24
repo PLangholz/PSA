@@ -2,17 +2,53 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>CS247 Project 3</title>
-	<link rel="stylesheet" href='/stylesheets/main.css'>
+    <title>PSA Design</title>
     <link rel="stylesheet" href='stylesheets/test.css'>
-    <script src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>
-    <script src='javascript/jquery-1.11.0.min.js'></script>
+    <link href='stylesheets/bootstrap.min.css' rel="stylesheet">
+    <link href='stylesheets/bootstrap-theme.min.css' rel="stylesheet">
+
+    <!--script src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>
     <script src='javascript/MediaStreamRecorder.js'></script>
-    <script src='javascript/main.js'></script>
+    <script src='javascript/main.js'></script-->
+    <script src='javascript/jquery-1.11.0.min.js'></script>
+        
 </head>
 <body>
 
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">PSA Design</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li {{#if team}} class="active" {{/if}}><a href="/team">The Team</a></li>
+              <li {{#if glmpse}} class="active" {{/if}}><a href="/glmpse">Glmpse</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Milestones<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/m1">M1</a></li>
+                  <li><a href="/m2">M2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </div>
+
+
     {{{body}}}
+
+
+    <script src="javascript/bootstrap.min.js"></script>
 
 </body>
 </html>

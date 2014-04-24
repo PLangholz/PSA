@@ -2,6 +2,13 @@
 	display: inline-block;
 }
 
+.proj {
+	padding: 15px;
+	background-color: #CCCCFF;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 .clickable {
 	padding: 10px;
 	font-size: 20pt;
@@ -10,6 +17,7 @@
 	margin: auto;
 	text-align: center;
 	width: 23%;
+	cursor: pointer;
 }
 
 .header {

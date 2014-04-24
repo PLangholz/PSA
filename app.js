@@ -6,8 +6,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var m1 = require('./routes/m1');
-var m2 = require('./routes/m2');
+var index = require('./routes/index');
 
 // Declare your route variables here.
 var routes = require('./routes');
@@ -40,9 +39,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 // Declare your routes here
-app.get('/', routes.index);
-app.get('/m1', m1.index);
-app.get('/m2', m2.index);
+app.get('/', index.index);
+app.get('/team', index.team);
+app.get('/glmpse', index.glmpse);
+app.get('/m1', index.m1);
+app.get('/m2', index.m2);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

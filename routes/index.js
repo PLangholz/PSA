@@ -1,9 +1,23 @@
 /* GET home page. */
 exports.index = function(req, res){
-  res.render('index', { title: 'PSA Design' });
+  res.render('index', {});
 };
 
+exports.team = function(req, res){
+  res.render('team', { team: true });
+};
 
 exports.m1 = function(req, res) {
-	res.render('m1', { title: 'PSA Design' });
+	res.render('m1', {});
 };
+
+exports.m2 = function(req, res) {
+    res.render('m2', {});
+};
+
+exports.glmpse = function(req, res) {
+    res.render('glmpse', { glmpse: true });
+};
+
+
+
