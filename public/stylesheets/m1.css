@@ -2,6 +2,10 @@
 	display: inline-block;
 }
 
+p {
+	font-size: 30px;
+}
+
 .clickable {
 	padding: 10px;
 	font-size: 20pt;
