@@ -9,7 +9,7 @@
 	border-radius: 10px;
 	margin: auto;
 	text-align: center;
-	width: 30%;
+	width: 48%;
 }
 
 .header {
@@ -50,4 +50,12 @@ a, a:hover, a:active, a:visited {
 	text-decoration: none;
 	color: inherit;
 
+}
+
+
+.project .wrapper {
+	border-radius: 10px;
+	background-color:rgba(100,100,100,.1);
+	margin: 20px;
+	padding: 10px;
 }

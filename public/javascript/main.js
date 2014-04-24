@@ -1,32 +1,32 @@
 $(document).ready( function () {
-  $('#interest').hide();
-  $('#projects').hide();
+  $('#milestones').hide();
+  $('#glmpse').hide();
   $('#people_nav').click(function() {
     $(".selected").each(function() {
       $(this).removeClass("selected");
     });
     $(this).addClass("selected");
     $('#people').show();
-    $('#interest').hide();
-    $('#projects').hide();
+    $('#milestones').hide();
+    $('#glmpse').hide();
   });
-  $('#projects_nav').click(function() {
+  $('#glmpse_nav').click(function() {
     $(".selected").each(function() {
       $(this).removeClass("selected");
     });
     $(this).addClass("selected");
     $('#people').hide();
-    $('#interest').hide();
-    $('#projects').show();
+    $('#milestones').hide();
+    $('#glmpse').show();
   });
-  $('#interests_nav').click(function() {
+  $('#milestones_nav').click(function() {
     $(".selected").each(function() {
       $(this).removeClass("selected");
     });
     $(this).addClass("selected");
     $('#people').hide();
-    $('#interest').show();
-    $('#projects').hide();
+    $('#milestones').show();
+    $('#glmpse').hide();
   });
 
 })
