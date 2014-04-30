@@ -20,4 +20,8 @@ exports.glmpse = function(req, res) {
 };
 
 
+exports.m3 = function(req, res) {
+	res.render('m3', {});
+}
+
 

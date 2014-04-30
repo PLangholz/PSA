@@ -44,6 +44,7 @@ app.get('/team', index.team);
 app.get('/glmpse', index.glmpse);
 app.get('/m1', index.m1);
 app.get('/m2', index.m2);
+app.get('/m3', index.m3);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
