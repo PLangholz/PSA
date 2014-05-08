@@ -24,4 +24,7 @@ exports.m3 = function(req, res) {
 	res.render('m3', {});
 }
 
+exports.m4 = function(req, res) {
+    res.render('m4', {});
+}
 

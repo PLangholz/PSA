@@ -1,0 +1,66 @@
+
+<div class="container">
+    <div class="jumbotron"><h1>Milestone 4</h1></div>
+</div>
+
+<div class="container">
+    <div class="img-rounded proj">
+        <h1>We're pursuing Glimpse</h1>
+    </div>
+    <div class="img-rounded proj">
+        <h2>What is Glimpse?</h2>
+        <p>Glimpse lets you stay connected with those you love by enabling you to get 4-second video glimpses into their life. Check out our previous milestones for more context.</p>    
+    </div>  
+    <div class="img-rounded proj">
+        <h2>Why are we pursuing Glimpse?</h2>
+        <p>The results of our WoZ testing pointed us towards Glimpse not Quack for two big reasons.</p>
+        <ol>
+            <li>Short glimpse videos are a more effective medium for impression-based communication than 10-second quack video chats</li>
+            <ul>
+                <li>Quack is about creating brief face-to-face moments, and users generally just said things like "hello how are you". They didn't put much thought into the video they were projecting to their friend because their focus was on watching the video feed from their friend. As a result, the videos were less rich and conveyed less information about the person, her surroundings, etc.</li>
+                <li>Users found more and more creative uses for Glimpse videos than Quack. Glimpse is about recording a video message for someone. Users used glimpses to say an animated hello, to deliver a goofy performance, and to show off things around them-- their location or a specific item. </li>
+                <li>Because of the performative dimension and the diversity of uses for glimpse videos, using glimpse (both recording your own and receiving from your friends) is funner than watching a 10-second feed of your friend's face as they talk to you.</li>
+            </ul>
+            <li>Synchronicity can place a real burden on users.</li>
+            <ul>
+                <li>Having two users be "online" at the same time required co-ordination, set-up, etc</li>
+                <li>Many times, when a user tried to schedule a "quack chat", the other user was not available, leading to failed attempts at communication.</li>
+                <li>Trying to schedule a 10-sec video chat required attention and effort; very cognitively demanding for what's supposed to be low-friction, impression-based communication</li>
+                <li>In user studies we found great opportunities for helping enable communication between people with different levels of motivation for staying in touch (e.g., mom-college kid communication). Synchronous communication requires both parties to be motivated participants. Therefore, it's not a good way to target relationships in which existing communication is asymmetrical. </li>
+            </ul>
+        </ol>
+    </div>  
+    <div class="img-rounded proj">
+        <h2>What does our functional prototype prioritize?</h2>
+        <h3>Mobile.</h3>
+        <p>Our WoZ testing only worked on desktop devices (because of HTML5 MediaRecorder limitations). This had two crucial implications:</p>
+        <ol>
+            <li>It limited the space of things you can get a glimpse of, both because laptops are bulkier (harder to take videos of things around you) and because people use laptops in sedentary settings, not when they're on the go and seeing the interesting things that glimpse requesters want glimpses of. Overall, it reduces the freedom of the user providing a glimpse.</li>
+            <li>It dramatically reduced the spontaneity of the interaction. Glimpse videos are too short and fleeting to be a hassle. Restricting the glimpse medium to laptops increases the burden on the user providing the glimpse: If you get a glimpse request from someone, you have to remember to respond the next time you're at a laptop. And making the job harder for the glimpse provider is worse than making the job harder for the glimpse requester. In asymmetrical communication use cases (e.g., mom-college kid), the user more interested in communication (mom) is going to be more likely to request a glimpse, so the less-motivated user (son) will be the glimpse provider. To make this communication work, the less-motivated user has to have a really easy job.</li>
+        </ol>
+        <p>Our team does not have a background in mobile, but this feature was too significant too ignore. So we're off to become semi-competent mobile developers!</p>
+    </div>
+    <div class="img-rounded proj">
+        <h2>What else did you learn from WoZ that you will be implementing?</h2>
+        <p>There are a few features that are "no-brainers" based on our WoZ testing.</p>
+        <ul>
+            <li>The ability to see the camera feed before triggering the recording. This lets users set the shot and the frame before starting to record the video. Without this feature, many users inadvertently recorded stuff they didn't mean to record.</li>
+            <li>The ability to see whether a user has seen your glimpse or not. Test users who provided glimpses said they wanted feedback from the other user about their glimpse. Has the other user seen it? What do they think of it? We're not sure yet what the best form of feedback is; for now, we're just sending read receipts.</li>
+            <li>The ability to review your own glimpses, at will, after you've recorded and sent them.</li>
+        </ul>    
+    </div>  
+    <div class="img-rounded proj">
+        <h2>What's your implementation status?</h2>
+            <h3> iOS </h3>
+            We have a functional iOS app. We can create accounts, request, send, and receive glimpses.All features mentioned above are implemented. Limitations are as follows:
+            <ul>
+                <li>No notion of "friends". Anyone can request a glimpse from anyone else on the system.</li>
+                <li>Not leveraging the power of background processing and not reducing size of videos, so there can be significant lag when uploading / downloading videos.</li>
+                <li>Not a slick or pretty user interface, but that's part of the point!</li>
+            </ul>
+
+            <h3> Android </h3>
+            We were worried about our ability to distribute the iOS app to a large number of test users. There's a delay to getting apps approved on the app stores, and getting users outfitted for alpha testing on TestFlight is quite involved. Since this project is moving quickly, we decided putting all of our faith in iOS was too much of a risk. Android applications are significantly easier to distribute for testing, so we've begun developing for Android as well. Development has been slower and we are not yet fully functional. (We're missing the ability to record and send glimpses, which is pretty crucial...)
+    </div>  
+</div>
+
