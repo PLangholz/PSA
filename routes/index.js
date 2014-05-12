@@ -28,3 +28,7 @@ exports.m4 = function(req, res) {
     res.render('m4', {});
 }
 
+exports.m5 = function(req, res) {
+    res.render('m5', {});
+}
+
