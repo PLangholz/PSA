@@ -32,3 +32,6 @@ exports.m5 = function(req, res) {
     res.render('m5', {});
 }
 
+exports.m6 = function(req, res) {
+    res.render('m6', {});
+}

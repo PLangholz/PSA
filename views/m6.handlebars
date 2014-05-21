@@ -1,0 +1,119 @@
+
+<div class="container">
+    <div class="jumbotron"><h1>Milestone 6: Iterating</h1></div>
+</div>
+
+<div class="container">
+
+    <div class="img-rounded proj">
+        <h2>Functional iteration</h2>
+
+    </div>    
+
+
+    <div class="img-rounded proj">
+        <h2>UI design iteration</h2> 
+        <p>
+            To be delightful and useful, glmpse must be simple, clean, and actionable. For casual, low-friction video communication to be easy and fun, the app can't get in your way; it has to make everything really easy. It should enable you to request, receive, and share 4-second videos seamlessly and without effort.
+            <br />
+            For any given user, the glmpse app is really just a wrapper around glmpse video requests (incoming and outgoing) and a way to initiate, respond to, and view requests. The challenge is to organize and display the requests such that three things are immediately clear about each request:
+            <ul>
+                <li>Who is the requester and who is the provider?</li>
+                <li>Has the request been fulfilled (i.e., is there a video attached to the request)?</li>
+                <li>Does the request require the user's attention (because it's a new request from someone else or it's a request the user has spawned that now has received a response)?</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="img-rounded proj">
+        <h3>Original Prototype</h3>
+        <p>
+        We started with a simple design that segregates requests by their kind and status: 
+            <ul>
+                <li>one page for viewing requests received from other users</li>
+                <li>one for viewing requests you initiated (which doubles as a page for initiating a request)</li>
+                <li>one for viewing glmpses you've received</li>
+                <li>one for viewing glmpses you've provided</li>
+            </ul>
+
+        Based on user testing, we identified several deficiencies with this design, but the biggest, most serious deficiency is that the homepage doesn't give you anything to do or see. Users have to navigate to a next page to see activity. Nothing is immediately actionable.
+        </p>
+
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/v1/home.PNG" width=250 />
+                <div class="caption">Home page</div>
+            </div>
+            <div class="col-md-3">
+                <img src="images/ui/v1/page.PNG" width=250 />
+                <div class="caption">Each sub-page is a list like this.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-rounded proj">
+        <h3>UI prototypes</h3>
+        <p>We prototyped a few different ways of organizing and presenting content using mock-ups and Flinto (for simulating the interactivity). We tested the prototypes with test users to identify what was working and what wasn't.</p>
+        
+
+        <h4>Unified Feed</h4>
+        <p>In this design, the home screen is a feed of all activity -- new requests from friends, open requests you've sent, received glimpses, and sent glimpses. Check out the flinto interaction prototype <a href="https://www.flinto.com/p/541e8bbc">here</a></p>
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/unified-v1.PNG" width=250 />
+            </div>
+        </div>
+
+        <h4>Activity Feed by Friend</h4>
+        <p>In this design, the home screen is a list users you're currently interacting with. Each user includes some information about the status of your interaction with that user. Clicking on a user leads you to a history of your activity with that user. Check out the flinto interaction prototype <a href="https://www.flinto.com/p/bc39d84d">here</a></p>
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/by-friend-home.PNG" width=250 />
+            </div>
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/by-friend-friend.PNG" width=250 />
+            </div>
+        </div>        
+
+        <h4>Activity Feed by Incoming/Outgoing</h4>
+        <p>In this design, the home screen has two tabs: incoming and outgoing. Incoming is new requests that have been sent to you and video responses to your requests; outgoing is requests you've initiated and glmpses you've sent. Check out the flinto interaction prototype <a href="https://www.flinto.com/p/98c811d8">here</a></p>
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/inscreen.PNG" width=250 />
+            </div>
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/outscreen.PNG" width=250 />
+            </div>
+        </div>     
+
+        <p>
+            We found that the unified feed was the most succesful organization of content. It required the least navigation through the app to achieve a user's goal; it immediately surfaced the content that was actionable or required attention; it gave a clear overview of all current activity, both in terms of requests the user received and the status of requests the user initiated. 
+            <br />
+            The downside of the design is that it requires some "learning" because it is noisy and messy. Because all content is on the same page, each individual piece of content needs a lot of information indicators -- who is this interaction with? did they request a glmpse or did I? If I received the request, have I seen it and responded to it? If I initiated the request, have I gotten a response? It took test users a bit to figure out what all of our indicators meant. 
+            <br />
+            In an effort to simplify the design, we iterated on the unified feed prototype:
+        </p>
+
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/proto-screens/clean-unified.PNG" width=250 />
+            </div>
+        </div>
+
+        <p>We were happy with the results of this UI iteration and decided to implement it. Here's a screenshot of the current home screen of our app:</p>
+
+
+        <div class="row tspace2">
+            <div class="col-md-3">
+                <img src="images/ui/v2/home.png" width=250 />
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+

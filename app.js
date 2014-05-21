@@ -47,6 +47,7 @@ app.get('/m2', index.m2);
 app.get('/m3', index.m3);
 app.get('/m4', index.m4);
 app.get('/m5', index.m5);
+app.get('/m6', index.m6);
 
 
 /// catch 404 and forwarding to error handler
