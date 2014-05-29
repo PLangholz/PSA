@@ -19,7 +19,6 @@ exports.glmpse = function(req, res) {
     res.render('glmpse', { glmpse: true });
 };
 
-
 exports.m3 = function(req, res) {
 	res.render('m3', {});
 }
@@ -34,4 +33,8 @@ exports.m5 = function(req, res) {
 
 exports.m6 = function(req, res) {
     res.render('m6', {});
+}
+
+exports.m7 = function(req, res) {
+    res.render('m7', {});
 }

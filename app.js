@@ -23,7 +23,6 @@ if (app.get('env') === 'development') {
     console.log("Now listening on port 3000");
 }
 
-
 // view engine setup
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('views', path.join(__dirname, 'views'));
@@ -48,6 +47,7 @@ app.get('/m3', index.m3);
 app.get('/m4', index.m4);
 app.get('/m5', index.m5);
 app.get('/m6', index.m6);
+app.get('/m7', index.m7);
 
 
 /// catch 404 and forwarding to error handler
