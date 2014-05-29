@@ -6,7 +6,8 @@
     <div class="container">
 
       <div class="img-rounded proj">
-        <a href="https://docs.google.com/presentation/d/1r3SylNBj6nwMH2MyL6_zwMsw30hycLztt_xUlGoF0pI/pub?start=false&loop=false&delayms=3000">Slides</a>
+        <h3>From May 18 to May 29th, we continued testing with users and iterating on the product. For the story of what we've discovered, check out the <a href="https://docs.google.com/presentation/d/1r3SylNBj6nwMH2MyL6_zwMsw30hycLztt_xUlGoF0pI/pub?start=false&loop=false&delayms=3000">slide deck</a> from our presentation. The rest of this page seeks to elaborate on the material in the deck and fill in the detail for some topics the presentation could only touch on.
+        </h3>
         <br/>
         <a href="https://drive.google.com/file/d/0B79PZKtPHAQrbjVKbEpxUFVMRUE/edit?usp=sharing">Consent form</a>
       </div>
@@ -14,7 +15,7 @@
       <div class="img-rounded proj">
         <h2>What glmpse needs...</h2> 
         <p>
-            Right now, glmpse is a phenomenal request/response interaction. But the users deserve more out of glmpse. We want a complete, full, conversation through a glmpse interaction. We don't want users feeling cut-off or for them to have to use other mediums (text, phone, email) to complete an interaction that began on glmpse. 
+            Starting on May 18th, glmpse was an effective way to get a 4-second video from a friend. But the users deserve more out of glmpse request. We want a glmpse request to turn into an interaction that feels complete and full. We don't want users feeling cut-off or for them to have to use other mediums (text, phone, email) to complete an interaction that began on glmpse. 
             <br />
             With this in mind, we feel the need to enhance some aspects of our current design.
             <ul>
@@ -57,11 +58,65 @@
             </ul>
         </p>
     </div>
+
+
+
+    <!-- USER TESTING -->
+
+    <div class="img-rounded proj">
+        <h2>Testing setup</h2> 
+        <p>After getting our first submission rejected from the App Store, we continued using TestFlight to deliver our app to test users. Test users downloaded the app remotely and mostly used it without supervision or intervention from the dev team. We also conducted sessions in which we watched test users complete tasks on the app, and we interviewed test users.</p>
+        <img width="700px" src="images/testing/glmpse-users.png" alt="users-graph" />
+        <p>We've added test users continuously in the past two weeks, but most test users were added in three big spurts that corresponded to major new releases of the app. Overall, we tested with 30 distinct users.</p>
+        <img width="700px" src="images/testing/requests-videos.png" alt="videos-requests" />
+        <p>After resetting the database of glmpse requests on May 18, we've processed 262 requests (141 from test users) and 260 video responses (117 from test users).</p>
+    </div>
+
+    <div class="img-rounded proj">
+      <h2>Functional Iteration</h2>
+      <p>The most important changes we implemented, tested, and iterated on involve the inclusion of text prompts and enabling commenting on a provided video. For the full story on these features, check out our slide deck linked above. This section describes other important changes we made to the app.
+      <br /><br />
+      <b>Re-engineered on-boarding process</b><br /><br />
+      <img width="300px" src="images/testing/new-user.png" alt="new-user" /><br />
+      Since test users are downloading and launching the app remotely, we needed a better way to help them understand the app and its usage. Many test users had very little context for the app and, in the extreme case, had only exchanged a few emails with a dev team member. We decided to use the medium to help them get oriented and give them something actionable immediately upon their first log-in. Upon sign-up, two things happen automatically:
+      <ol>
+        <li>We (TeamGlmpse) send the new user a stock glmpse that explains the app and how to do things</li>
+        <li>We (TeamGlmpse) send the new user a request for a glmpse so they can get a feel for the experience of recording one</li>.
+      </ol>
+      The picture above shows the feed a new user sees -- an incoming explanatory glimpse and our request.
+
+      <br />
+      <br />
+
+      <b>Reworked UI</b>
+      <p>With new requests, videos, or comments coming in, a user's feed it continuously changing. It soon became clear we needed better ways for users to know what's up. Among the questions we need the UI to answer for the user are:
+      <ul> 
+        <li>What outstanding requests have I not responded to?</li>
+        <li>What requests have I received a video for?</li>
+        <li>Have I watched a video, or is it new?</li>
+        <li>Has someone commented on a video I provided?</li>
+      </ul>
+       The UI we are currently using displays all of a user's glimpse interactions in a unified feed, sorted by date. The status of each request is indicated by the triangle to the left of the request.
+       <ul>
+        <li>The directionality of the triangle signals who originated the request</li>
+        <li>If a request has a video attached to it, the triangle is green</li>
+        <li>If a request requires your attention (either because you need to respond to it or because there's a new video response you haven't seen), the triangle is red</li>
+        <li>If the request is outstanding and unfulfilled, there's not anything you can do, so we show these requests next to a greyed-out triangle.</li>
+       </ul>
+      We also use push notifications to notify a user of new glimpse requests, glimpse responses, and comments.
+      <br />
+      All other parts of the app have also gotten their UI revamped at least twice so far. For example, we improved the video recording page by displaying the prompt above the camera feed and visually showing users how far into the recording process they are (by having the red recording circle fill in as recording progresses).
+      <br />
+      <br />
+      <b>Variable-length video recording</b> <br /><br />
+      During testing, we soon realized that different kinds of requests require different video durations to fulfill. Some requests require just a quick facial expression while others are more involved. Four seconds is not a size that fits all, and when a video is only a few seconds long, a second or two more or less makes a huge difference. To enable flexibility of requests and to empower the glimpse provider to have more control over the glimpse they produce, we extended the maximum video duration to 10 seconds and now allow glimpse providers to stop the recording early if their glimpse requires less time.</li>
+    </div>
+
     <div class="img-rounded proj">
       <h2>What glmpse will do...</h2>
       <h4>Design Implications</h4>
       <p>
-      There are a number of features we're planning to implement to address the problems we've found in user testing, and also just to explore further possibilities with Glmpse:
+      Looking forward, there are a number of features we're planning to implement to address the problems we've found in user testing, and also just to explore further possibilities with Glmpse:
       
         <ul>
         
